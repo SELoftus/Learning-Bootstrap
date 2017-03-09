@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Bootstrap Template</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+  <!--classes visible only on certain devices-->
+    <div class="container">
+      <p class="visible-xs-block">This Paragraph is visible only on extra small devices</p>
+      <p class="visible-sm-block">This Paragraph is visible only on small devices</p>
+      <p class="visible-md-block">This Paragraph is visible only on medium devices</p>
+      <p class="visible-lg-block">This Paragraph is visible only on large devices</p>
+    </div>
+
+<!--classes hidden on certan devices-->
+<div class="container">
+  <p class="hidden-xs">This paragraph is hidden only on extra small devices</p>
+  <p class="hidden-sm">This paragraph is hidden only on  small devices</p>
+  <p class="hidden-md">This paragraph is hidden only on medium devices</p>
+  <p class="hidden-lg">This paragraph is hidden only on large devices</p>
+</div>
+
+<!--show/hide elements for printing-->
+<div class="container">
+  <p class="visible-print-block">Hide block elements for the browser, while making them visible for print.</p>
+  <p class="visible-print-inline">Hide inline elements for the browser, while making them visible for print.</p>
+  <p class="visible-print-inline-block">Hide inline-block elements for the browser, while making them visible for print.</p>
+  <p class="hidden-print">Hide elements for printing but make them visible in the browser.</p>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
