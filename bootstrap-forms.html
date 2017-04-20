@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Forms</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Bootstrap Forms</h1>
+    <h2>Creating Vertical Form Layout</h2>
+    <form>
+      <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <label type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox">Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+
+<h2>Creating Horizontal Form Layout</h2>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail" class="control-label col-xs-2">Email</label>
+        <div class="col-xs-10">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="control-label col-xs-2">Password</label>
+        <div class="col-xs-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </div>
+</form>
+
+<h2>Creating Inline Form Layout</h2>
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<h2>Static Form Control</h2>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail" class="control-label col-xs-2">Email</label>
+        <div class="col-xs-10">
+            <p class="form-control-static">harrypotter@mail.com</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="control-label col-xs-2">Password</label>
+        <div class="col-xs-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </div>
+</form>
+
+<h2>Placement of Checkboxes and Radios</h2>
+
+<h3>Stacked Checkboxes and Radios</h3>
+<form>
+  <h4>Vertically stacked checkboxes</h4>
+  <div class="checkbox">
+    <label><input type="checkbox" name="sports">Cricket</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" name="sports">Football</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" name="sports">Tennis</label>
+  </div>
+  <h4>Vertically Stacked Radios</h4>
+  <div class="radio">
+    <label><input type="radio" name="gender">Male</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="gender">Female</label>
+  </div>
+</form>
+
+<h3>Inline Checkboxes and Radios</h3>
+<form>
+  <h4>Inline Checkboxes</h4>
+  <div>
+    <label class="checkbox-inline"><input type="checkbox" name="sports">Cricket</label>
+    <label class="checkbox-inline"><input type="checkbox" name="sports">Football</label>
+    <label class="checkbox-inline"><input type="checkbox" name="sports">Tennis</label>
+  </div>
+  <h4>Inline Radios</h4>
+  <label class="radio-inline"><input type="radio" name="gender">Male</label>
+  <label class="radio-inline"><input type="radio" name="gender">Female</label>
+</form>
+
+<h2>Height Sizing of Inputs and Select Boxes</h2>
+<form>
+    <div class="row">
+        <div class="col-xs-6">
+            <input type="text" class="form-control input-lg" placeholder="Large input">
+        </div>
+        <div class="col-xs-6">
+            <select class="form-control input-lg">
+                <option>Large select</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-6">
+            <input type="text" class="form-control" placeholder="Default input">
+        </div>
+        <div class="col-xs-6">
+            <select class="form-control">
+                <option>Default select</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-6">
+            <input type="text" class="form-control input-sm" placeholder="Small input">
+        </div>
+        <div class="col-xs-6">
+            <select class="form-control input-sm">
+                <option>Small select</option>
+            </select>
+        </div>
+    </div>
+</form>
+
+<h2>Column Sizing of Inputs, Textareas and Select Boxes</h2>
+<form>
+  <div class="row">
+    <div class="col-xs-3">
+      <input type="text" class="form-control">
+    </div>
+    <div class="col-xs-4">
+      <input type="text" class="form-control">
+    </div>
+    <div class="col-xs-5">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-xs-3">
+      <textarea class="form-control"></textarea>
+    </div>
+    <div class="col-xs-4">
+      <textarea class="form-control"></textarea>
+    </div>
+    <div class="col-xs-5">
+      <textarea class="form-control"></textarea>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-xs-3">
+      <select class="form-control">
+        <option>Select</option>
+      </select>
+    </div>
+    <div class="col-xs-4">
+      <select class="form-control">
+        <option>Select</option>
+      </select>
+    </div>
+    <div class="col-xs-5">
+      <select class="form-control">
+        <option>Select</option>
+      </select>
+    </div>
+  </div>
+</form>
+
+<h2>Height Sizing of Form Groups</h2>
+<form class="form-horizontal">
+  <div class="form-group form-group-lg">
+    <label class="col-sm-3 control-label" for="inputLarge">Large label</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inputLarge" placeholder="Large input">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-xm-3 control-label" for="inputDefault">Default label</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inputDefault" placeholder="Default input">
+    </div>
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="col-sm-3 control-label" for="inputSmall">Small label</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inputSmall" placeholder="Small input">
+    </div>
+  </div>
+</form>
+
+<h2>Creating Disabled and Readonly Inputs</h2>
+<form>
+  <h3>Disabled stacked checkboxes</h3>
+  <div class="checkbox disabled">
+    <label><input type="checkbox" disabled="disabled">Disabled checkbox</label>
+  </div>
+  <div class="checkbox disabled">
+    <label><input type="checkbox" disabled="disabled">Another disabled checkbox</label>
+  </div>
+  <h3>Disabled stacked radios</h3>
+  <div class="radio disabled">
+    <label><input type="radio" disabled="disabled">Disabled radio</label>
+  </div>
+  <div class="radio disabled">
+    <label><input type="radio" disabled="disabled">Another disabled radio</label>
+  </div>
+  <h3>Disabled inline checkboxes</h3>
+  <p>
+    <label class="checkbox-inline disabled"><input type="checkbox" disabled="disabled">Disabled checkbox</label>
+    <label class="checkbox-inlie disabled"><input type="checkbox" disabled="disabled">Another disabled< checkbox</label>
+  </p>
+  <h3>Disabled inline radios</h3>
+  <p>
+    <label class="radio-inline disabled"><input type="radio" disabled="disabled">Disabled radio</label>
+    <label class="radio-inline disabled"><input type="radio" disabled="disabled">Another disabled radio</label>
+  </p>
+</form>
+<h3>Using the 'readonly' attribute to create read-only controls</h3>
+<form>
+    <input type="text" class="form-control" placeholder="Readonly input" readonly="readonly">
+</form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
