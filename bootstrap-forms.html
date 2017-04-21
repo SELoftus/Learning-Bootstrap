@@ -270,6 +270,163 @@
     <input type="text" class="form-control" placeholder="Readonly input" readonly="readonly">
 </form>
 
+<h2>Creating Disabled Fieldsets</h2>
+<form class="form-horizontal">
+  <fieldset disabled="disabled">
+    <div class="form-group">
+      <label for="inputEmail" class="control-label col-xs-2">Email</label>
+      <div class="col-xs-10">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="control-label col-xs-2">Password</label>
+      <div class="col-xs-10">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-offset-2 col-xs-10">
+        <div class="checkbox">
+          <label><input type="checkbox">Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-offset-2 col-xs-10">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<h2>Placing Help Text Around Form Controls</h2>
+<form>
+  <input type="text" class="form-control">
+  <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+</form>
+
+<h2>Bootstrap Form Validation States</h2>
+<form class="form-horizontal">
+  <div class="form-group has-success has-feedback">
+    <label class="col-xs-2 control-label" for="inputSuccess">Username
+    </label>
+    <div class="col-xs-10">
+      <input type="text" id="inputSuccess" class="form-control" placeholder="Input with success">
+      <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        <span class="help-block">Username is available</span>
+    </div>
+  </div>
+  <div class="form-group has-warning">
+    <label class="col-xs-2 control label" for="inputWarning">Password</label>
+    <div class="col-xs-10">
+      <input type="password" id="inputWarning" class="form-control" placeholder="Input with warning">
+      <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+      <span class="help-block">Password strength: Weak</span>
+    </div>
+  </div>
+  <div class="form-group has-error">
+    <label class="col-xs-2 control-label" for="inputError">Email</label>
+    <div class="col-xs-10">
+      <input type="email" id="inputError" class="form-control" placeholder="Input with error">
+      <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+      <span class="help-block">Please enter a valid email address</span>
+    </div>
+  </div>
+</form>
+
+<h2>Supported Form Controls in Bootstrap</h2>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-xs-3" for="firstName">First Name:</label>
+    <div class="col-xs-9">
+      <input type="text" class="form-control" id="firstName" placeholder="First Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-xs-3" for="lastName">Last Name:</label>
+    <div class="col-xs-9">
+      <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-xs-3" for="inputEmail">Email Address:</label>
+    <div class="col-xs-9">
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-xs-3" for="phoneNumber">Phone Number:</label>
+    <div class="col-xs-9">
+      <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-xs-3">Date of Birth:</label>
+    <div class="col-xs-3">
+      <select class="form-control">
+        <option>Date</option>
+      </select>
+    </div>
+    <div class="col-xs-3">
+      <select class="form-control">
+        <option>Month</option>
+      </select>
+    </div>
+    <div class="col-xs-3">
+      <select class="form-control">
+        <option>Year</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-xs-3" for="postalAddress">Postal Address:
+    </label>
+    <div class="col-xs-9">
+      <textarea rows="3" class="form-control" id="postalAddress" placeholder="Postal Address"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-xs-3" for="zipCode">Zip Code:</label>
+    <div class="col-xs-9">
+      <input type="text" class="form-control" id="zipCode" placeholder="Zip Code">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-xs-3">Gender:</label>
+    <div class="col-xs-2">
+      <label class="radio-inline">
+        <input type="radio" name="genderRadios" value="male">Male
+      </label>
+    </div>
+    <div class="col-xs-2">
+      <label class="radio-inline">
+        <input type="radio" name="genderRadios" value="female">Female
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-offset-3 col-xs-9">
+      <label class="checkbox-inline">
+        <input type="checkbox" value="news">Send me the latest news and updates.
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-offset-3 col-xs-9">
+      <label class="checkbox-inline">
+        <input type="checkbox" value="agree">I agree to the <a href="#">Terms and Conditions</a>
+      </label>
+    </div>
+  </div>
+  <br/>
+  <div class="form-group">
+    <div class="col-xs-offset-3 col-xs-9">
+      <input type="submit" class="btn btn-primary" value="Submit">
+      <input type="reset" class="btn btn-default" value="Reset">
+  </div>
+</div>
+</form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
